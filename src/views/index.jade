@@ -1,0 +1,153 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title 阿杰服务站 | 首页
+    link(rel="icon" href="/assets/images/favicon.ico")
+    script(src='/libs/jquery/dist/jquery.min.js' type="text/javascript")
+    link(rel='stylesheet', href='/libs/normalize.css/normalize.css')
+    link(rel='stylesheet', href='/libs/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/libs/font-awesome/css/font-awesome.min.css')
+
+    link(rel='stylesheet', href='/assets/style/main.css')
+    link(rel='stylesheet', href='/assets/style/index.css')
+    link(rel='stylesheet', href='/assets/style/imgitem.css')
+  body
+    .app.app-index
+      include pages/template/navigater
+      .index-banner
+        .container
+          .row
+            .col-md-7.col-sm-12
+              .banner-left
+                h2 阿杰服务站
+                p 流量卡，注册卡，影视会员，小商品等。
+            .col-md-5.col-sm-12
+              .banner-right
+                img(src="/assets/images/index.png")
+      .container.img-list-item.app-container
+        //.row
+          .col-lg-12.col-md-12
+            //blockquote
+              p 描述
+            .jumbotron
+              h2 阿杰服务站
+              p.text-right -- 流量卡，注册卡，影视会员，小商品等。
+              //p
+                a.btn.btn-primary.btn-lg(href='#', role='button') 更多...
+        .page-header
+          h3.page-title 流量卡
+        .row
+          .col-md-3.col-sm-4
+            .img-item-box
+              img(src='/assets/images/1.jpg')
+              .box-content
+                h3.title 移动
+                span.post
+              ul.social
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-search
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-link
+          .col-md-3.col-sm-4
+            .img-item-box
+              img(src='/assets/images/2.jpg')
+              .box-content
+                h3.title 联通
+                span.post 未来科技
+              ul.social
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-search
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-link
+          .col-md-3.col-sm-4
+            .img-item-box
+              img(src='/assets/images/3.jpg')
+              .box-content
+                h3.title 电信
+                span.post 未来科技
+              ul.social
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-search
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-link
+          .col-md-3.col-sm-4
+            .img-item-box
+              img(src='/assets/images/2.jpg')
+              .box-content
+                h3.title 注册卡
+                span.post 未来科技
+              ul.social
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-search
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-link
+        .page-header
+          h3.page-title 影视会员
+        .row
+          .col-md-3.col-sm-4
+            .img-item-box
+              img(src='/assets/images/3.jpg')
+              .box-content
+                h3.title 爱奇艺
+                //span.post 未来科技
+              ul.social
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-search
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-link
+          .col-md-3.col-sm-4
+            .img-item-box
+              img(src='/assets/images/1.jpg')
+              .box-content
+                h3.title 腾讯
+                //span.post 未来科技
+              ul.social
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-search
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-link
+        .page-header
+          h3.page-title 小商品
+        .row
+          .col-md-3.col-sm-4
+            .img-item-box
+              img(src='/assets/images/3.jpg')
+              .box-content
+                h3.title 手表
+                //span.post 未来科技
+              ul.social
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-search
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-link
+          .col-md-3.col-sm-4
+            .img-item-box
+              img(src='/assets/images/1.jpg')
+              .box-content
+                h3.title 红酒
+                //span.post 未来科技
+              ul.social
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-search
+                li
+                  a(href='/pages/list.html')
+                    i.fa.fa-link
+      include pages/template/footer
+    script(src='/libs/bootstrap/dist/js/bootstrap.min.js' type="text/javascript")

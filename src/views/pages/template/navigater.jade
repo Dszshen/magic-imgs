@@ -1,0 +1,35 @@
+nav.navbar.navbar-default(role='navigation')
+  .container
+    // Brand and toggle get grouped for better mobile display
+    .navbar-header
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+        span.sr-only 菜单
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='/') JIEMALL
+    // Collect the nav links, forms, and other content for toggling
+    .collapse.navbar-collapse.navbar-ex1-collapse
+      ul.nav.navbar-nav
+        li#index
+          a(href='/') 首页
+        li#list
+          a(href='/pages/list.html') 列表
+        li#detail
+          a(href='/pages/detail.html') 详情
+        li#about
+          a(href='/pages/about.html') 关于
+      //ul.nav.navbar-nav.navbar-right
+        li#about
+          a(href='/pages/about.html') 关于
+        //li.dropdown
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            | 张三
+            b.caret
+          ul.dropdown-menu
+            li
+              a(href='#') 设置
+            li
+              a(href='#') 我的
+            li
+              a(href='#') 退出

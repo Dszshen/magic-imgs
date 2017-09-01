@@ -29,7 +29,7 @@ var SERVER_PROXY = 'http://183.230.40.87:8001/';
 
 var TMP_FOLDER = './tmp/';
 
-var SERVER_PORT = 7890;
+var SERVER_PORT = 8555;
 
 var APP = '';
 

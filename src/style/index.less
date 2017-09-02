@@ -1,4 +1,5 @@
 .app-index{
+  background-color: #F989BC;
   .index-banner{
     background-color: #f2f2f2;
     .banner-left{
@@ -26,4 +27,83 @@
       }
     }
   }
+
+  .index-container{
+    margin-top:2px;
+    background-color: #f2f2f2;
+
+    .index-photo{
+      padding:50px;
+      img{
+        width:100%;
+      }
+    }
+
+    .index-photo2{
+      display: none;
+      .index-photo2-item{
+        background-color:#f2f2f2;
+        padding:20px;
+        img{
+          max-width:100%;
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .index-photo{
+        padding:10px 5px;
+      }
+
+      .index-photo2{
+        display: block;
+        padding:0 5px;
+        .index-photo2-item{
+          padding:10px 5px;
+          img{
+            max-width:100%;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      .index-photo{
+        padding:20px 10px;
+      }
+      .index-photo2{
+        //margin-top:0;
+        display: block;
+        padding:0 5px;
+        .index-photo2-item{
+          padding:20px 10px;
+          img{
+            max-width:100%;
+          }
+        }
+      }
+
+
+    }
+
+    @media screen and (max-width: 1024px) {
+      .index-photo{
+        padding:30px 15px;
+      }
+
+      .index-photo2{
+        //margin-top:0;
+        //display: block;
+        padding:10px;
+        .index-photo2-item{
+          padding:30px 15px;
+          img{
+            max-width:100%;
+          }
+        }
+      }
+    }
+  }
+
 }
+

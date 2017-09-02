@@ -2,35 +2,53 @@
   //background: url("http://ovhlnzz8r.bkt.clouddn.com/1%20%2810%29.jpg");
   background-color: #F989BC;
   .photo-container{
-    margin-top:20px;
+    padding:10px;
+    margin-top:2px;
     background-size: 100% 100%;
+    text-align: center;
   }
 
   .photo-item{
     //display: inline-block;
-    padding:50px 50px;
+    padding:50px 0;
     border:1px solid #f2f2f2;
     margin-top:20px;
     background-color: #f2f2f2;
     //width:50%;
+    text-align: center;
     img{
       width:100%;
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
+    .photo-container{
+      //margin-top:0;
+      padding:0 5px;
+    }
+
     .photo-item{
       padding:20px 15px;
     }
   }
 
-  @media screen and (max-width: 992px) {
+  @media screen and (min-width: 992px) {
+    .photo-container{
+      //margin-top:0;
+      padding:0 5px;
+    }
+
     .photo-item{
       padding:30px 10px;
     }
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1200px) {
+    .photo-container{
+      //margin-top:0;
+      padding:10px;
+    }
+
     .photo-item{
       padding:40px 30px;
     }

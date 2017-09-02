@@ -1,21 +1,21 @@
 {
-  "name": "jiemall",
+  "name": "wedding",
   "version": "1.0.0",
-  "description": "jiemall",
+  "description": "bywedding",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dszshen/jiemall.git"
+    "url": "git+https://github.com/Dszshen/wedding.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Dszshen/jiemall/issues"
+    "url": "https://github.com/Dszshen/wedding/issues"
   },
-  "homepage": "https://github.com/Dszshen/jiemall#readme",
+  "homepage": "https://github.com/Dszshen/wedding#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",

@@ -20,6 +20,7 @@
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
+    "jquery-lazyload": "^1.9.7",
     "lazyload": "^2.0.0-beta.1",
     "normalize.css": "^7.0.0",
     "simple-line-icons": "^2.4.1"

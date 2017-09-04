@@ -140,6 +140,7 @@ gulp.task('compile-plugins', function () {
 
 gulp.task('watch', function () {
   gulp.watch(VIEWS, ['compile-views']);
+  gulp.watch(JS, ['bundle']);
   gulp.watch(CSSDIR, ['compile-style']);
   gulp.watch(IMAGES, ['compile-image']);
   gulp.watch(PLUGINS, ['compile-plugins']);
@@ -164,6 +165,7 @@ gulp.task('dev', ['default'], function () {
   }, function () {
     //gulp.run('watch');
     gulp.watch(VIEWS, ['compile-views']);
+    gulp.watch(JS, ['bundle']);
     gulp.watch(CSSDIR, ['compile-style']);
     gulp.watch(IMAGES, ['compile-image']);
     gulp.watch(PLUGINS, ['compile-plugins']);

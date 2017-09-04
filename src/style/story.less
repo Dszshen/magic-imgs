@@ -14,8 +14,23 @@
         font-size:1.2em;
       }
 
-      .story-desc{
+      .story-block-image-wrap{
+        margin:10px 0;
+        text-align: center;
+        img{
+          width:60%;
+        }
+        .story-img-desc{
+          text-align: center;
+          margin:15px 0;
+          font-size:12px;
+          color: #e506b1;
+        }
+      }
 
+
+      .story-desc{
+        margin:20px 0;
       }
 
       .story-desc:after{
@@ -33,13 +48,13 @@
 
       .story-desc:nth-child(odd) .story-image-wrap
       {
-        padding:10px 20px 10px 0;
+        padding-right:20px;
         float:left;
       }
 
       .story-desc:nth-child(even) .story-image-wrap{
         float:right;
-        padding:10px 0 10px 20px;
+        padding-left:20px;
       }
 
       p{

@@ -2,13 +2,13 @@
 var pathName = window.location.pathname;
 console.log(pathName);
 if(pathName.indexOf('photo')!==-1){
-  $("#photo").addClass("active");
+  $(".nav-photo").addClass("active");
 }else if(pathName.indexOf('story')!==-1){
-  $("#story").addClass("active");
+  $(".nav-story").addClass("active");
 }else if(pathName==="/"){
-  $("#index").addClass("active");
+  $(".nav-index").addClass("active");
 }else{
-  $("#index").addClass("active");
+  $(".nav-index").addClass("active");
 }
 
 /*if(pathName==="/"){

@@ -34,6 +34,10 @@ html,body{
     border-radius: 0;
   }
 
+  .nav-min{
+    display: none;
+  }
+
   .navbar-default .navbar-nav>li>a{
     color:#f91596;
   }
@@ -54,8 +58,6 @@ html,body{
   @media (min-width: 768px) {
     .app-container {
       width: 100%;
-      //padding-left:5px;
-      //padding-right: 5px;
     }
   }
 
@@ -70,6 +72,36 @@ html,body{
       width: 1170px;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .navbar{
+      display: none;
+    }
+
+    .nav-min{
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .navbar{
+      display: none;
+    }
+
+    .nav-min{
+      display: block;
+    }
+  }
+
+/*  @media screen and (max-width: 1200px) {
+    .navbar{
+      display: none;
+    }
+
+    .nav-min{
+      display: block;
+    }
+  }*/
 
   .app-footer{
     //border-top:1px solid #f2f2f2;

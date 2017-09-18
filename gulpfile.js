@@ -39,6 +39,7 @@ var JS = ['./src/js/**/*.js'];
 var CSSDIR = ['./src/style/**/*.less'];
 var VIEWS = ['./src/views/**/*.jade'];
 var IMAGES = ['./src/images/**/*'];
+var MUSIC = ['./src/music/**/*'];
 var PLUGINS = ['./src/plugins/**/*'];
 
 
@@ -132,8 +133,14 @@ gulp.task('compile-image', function () {
       .pipe(gulp.dest(FOLDER+'assets/images'));
 });
 
+gulp.task('compile-music', function () {
+  return gulp.src(MUSIC, {base: 'src/music'})
+      .pipe(cached('debug', {optimizeMemory: true}))
+      .pipe(gulp.dest(FOLDER+'assets/music'));
+});
+
 gulp.task('compile-plugins', function () {
-  return gulp.src(PLUGINS, {base: 'src'})
+  return gulp.src(PLUGINS, {base: 'src/plugins'})
       .pipe(cached('debug', {optimizeMemory: true}))
       .pipe(gulp.dest(FOLDER+'assets/libs'));
 });
@@ -144,6 +151,7 @@ gulp.task('watch', function () {
   gulp.watch(CSSDIR, ['compile-style']);
   gulp.watch(IMAGES, ['compile-image']);
   gulp.watch(PLUGINS, ['compile-plugins']);
+  gulp.watch(MUSIC, ['compile-music']);
   //----------------------------------
   gulp.watch(FOLDER + '/**/*', {read: false}).on('change', function (event) {
     browserSync.reload();
@@ -151,7 +159,7 @@ gulp.task('watch', function () {
 });
 
 //mock----------'mock-compile-api'任务----
-gulp.task('default', ['bundle', 'compile-views', 'compile-lib', 'compile-libs', 'compile-style', 'compile-image', 'compile-plugins']);
+gulp.task('default', ['bundle', 'compile-views', 'compile-lib', 'compile-libs', 'compile-style', 'compile-image','compile-music', 'compile-plugins']);
 
 gulp.task('dev', ['default'], function () {
   console.log('##Starting Server.......');
@@ -168,6 +176,7 @@ gulp.task('dev', ['default'], function () {
     gulp.watch(JS, ['bundle']);
     gulp.watch(CSSDIR, ['compile-style']);
     gulp.watch(IMAGES, ['compile-image']);
+    gulp.watch(MUSIC, ['compile-music']);
     gulp.watch(PLUGINS, ['compile-plugins']);
     gulp.watch(FOLDER + '/**/*', {read: false}).on('change', function (event) {
       browserSync.reload();

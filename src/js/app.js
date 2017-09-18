@@ -5,6 +5,8 @@ if(pathName.indexOf('photo')!==-1){
   $(".nav-photo").addClass("active");
 }else if(pathName.indexOf('story')!==-1){
   $(".nav-story").addClass("active");
+}else if(pathName.indexOf('invitation')!==-1){
+  $(".nav-invitation").addClass("active");
 }else if(pathName==="/"){
   $(".nav-index").addClass("active");
 }else{

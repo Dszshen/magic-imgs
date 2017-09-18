@@ -1,0 +1,355 @@
+doctype html
+html.no-js(lang='zh_cn')
+  head
+    meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    // Page Title Here
+    title 请柬
+    link(rel="icon" href="/assets/images/favicon.ico")
+    // Page Description Here
+    meta(name='description', content='A responsive coming soon template, un template HTML pour une page en cours de construction')
+    // Disable screen scaling
+    meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0')
+
+    //script(src='/libs/jquery/dist/jquery.min.js' type="text/javascript")
+    link(rel='stylesheet', href='/libs/normalize.css/normalize.css')
+    link(rel='stylesheet', href='/libs/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/libs/font-awesome/css/font-awesome.min.css')
+
+    link(rel='stylesheet', href='/assets/style/main.css')
+    link(rel='stylesheet', href='/assets/style/invitation.css')
+    // Web fonts and Web Icons
+    link(rel='stylesheet', href='/assets/libs/invitation/css/pageloader.css')
+    link(rel='stylesheet', href='/assets/libs/invitation/fonts/opensans/stylesheet.css')
+    link(rel='stylesheet', href='/assets/libs/invitation/fonts/asap/stylesheet.css')
+    link(rel='stylesheet', href='/assets/libs/invitation/css/ionicons.min.css')
+    // Vendor CSS style
+    link(rel='stylesheet', href='/assets/libs/invitation/css/foundation.min.css')
+    link(rel='stylesheet', href='/assets/libs/invitation/js/vendor/jquery.fullPage.css')
+    link(rel='stylesheet', href='/assets/libs/invitation/js/vegas/vegas.min.css')
+    // Main CSS files
+    link(rel='stylesheet', href='/assets/libs/invitation/css/main.css')
+    link(rel='stylesheet', href='/assets/libs/invitation/css/main_responsive.css')
+    link(rel='stylesheet', href='/assets/libs/invitation/css/style-color1.css')
+    script(src='/assets/libs/invitation/js/vendor/modernizr-2.7.1.min.js')
+    style.
+      #jp_container_1 {
+        position: fixed;
+        top: 5%;
+        left: 2%
+      }
+
+      #jp_container_1 a {
+        font-size: 26px;
+        color: #ffffff
+      }
+
+      #jp_container_1 a:hover {
+        color: #f4645f
+      }
+  body#menu.alt-bg
+    .app.app-invitation
+      include pages/template/navigater
+      .invitation-container
+        //if lt IE 8
+          p.browsehappy
+            | You are using an
+            strong outdated
+            |  browser. Please
+            a(href='http://browsehappy.com/') upgrade your browser
+            |  to improve your experience.
+        // Page Loader
+        #page-loader.page-loader
+          div
+            i.ion.ion-loading-d
+            p 美丽值得期待...
+        // BEGIN OF site cover
+        #s-cover.page-cover
+          // Cover Background
+          .cover-bg.pos-abs.full-size.bg-img(data-image-src='/assets/libs/invitation/img/bg-slide3.jpg')
+          // BEGIN OF Slideshow Background
+          //.cover-bg.pos-abs.full-size.slide-show
+            i.img(data-src='/assets/libs/invitation/img/wedding/1.jpg')
+            i.img(data-src='/assets/libs/invitation/img/wedding/2.jpg')
+            i.img(data-src='/assets/libs/invitation/img/wedding/3.jpg')
+            i.img(data-src='/assets/libs/invitation/img/wedding/4.jpg')
+            i.img(data-src='/assets/libs/invitation/img/wedding/5.jpg')
+            i.img(data-src='/assets/libs/invitation/img/wedding/6.jpg')
+            i.img(data-src='/assets/libs/invitation/img/wedding/7.jpg')
+            i.img(data-src='/assets/libs/invitation/img/wedding/8.jpg')
+            i.img(data-src='/assets/libs/invitation/img/wedding/9.jpg')
+            i.img(data-src='/assets/libs/invitation/img/wedding/10.jpg')
+            i.img(data-src='/assets/libs/invitation/img/wedding/11.jpg')
+            i.img(data-src='/assets/libs/invitation/img/wedding/12.jpg')
+            i.img(data-src='/assets/libs/invitation/img/wedding/13.jpg')
+            i.img(data-src='/assets/libs/invitation/img/wedding/14.jpg')
+            i.img(data-src='/assets/libs/invitation/img/wedding/15.jpg')
+          .cover-bg.pos-abs.full-size.slide-show
+            i.img(data-src='/assets/libs/invitation/img/bg-slide3.jpg')
+            i.img(data-src='/assets/libs/invitation/img/bg-slide2.jpg')
+            i.img(data-src='/assets/libs/invitation/img/bg-slide1.jpg')
+          // END OF Slideshow Background
+          .cover-bg-mask.pos-abs.full-size.bg-color(data-bgcolor='rgba(0, 0, 0, 0.41)')
+        // END OF site Cover
+        // Begin of timer pane
+        #s-when.pane-when
+          .content
+            // Clock
+            .clock.clock-countdown
+              .site-config(data-date='10/5/2017 12:28:00', data-date-timezone='+8')
+              .elem-center
+                .digit
+                  span.days 16
+                  span.txt 天
+              .elem-bottom
+                .deco
+                // <span class="days">12</span><span class="thin">D</span>
+                span.hours 18
+                span.thin 小时
+                span.minutes 45
+                span.thin 分钟
+                span.seconds 36
+                span.thin 秒
+            footer
+              p
+                | 2017年
+                strong 10月5日
+        // End of timer pane
+        // BEGIN OF site main content content here
+        main#mainpage.page-main
+          // Begin of home page
+          #s-home.section.page-home.page.page-cent
+            // Content
+            section.content
+              header.header
+                .h-left
+                  h2
+                    | 诚邀
+                    strong 见证
+                .h-right
+                  h3
+                    | 罗密欧 &
+                    br
+                    |             朱丽叶
+                  h4.subhead
+                    a(href='#register') 婚礼庆典
+            // Scroll down button
+            //footer.p-footer.p-scrolldown
+              a(href='#register')
+                .arrow-d
+                  .before Scroll
+                  .after Down
+                  .circle
+                    i.ion.ion-mouse
+          // End of home page
+          // Begin of register page
+          #s-register.section.page-register.page.page-cent
+            section.content
+              header.p-title
+                h3
+                  | 庆宴时间：
+                  i.ion.ion-compose
+                h4.subhead 2017年10月5日
+              div
+                form#mail-subscription.form.magic.send_email_form(method='get', action='ajaxserver/serverfile.php')
+                  p.invite
+                    br
+                    |             请在下方输入到场宾客姓名我们将提前为您安排坐席：
+                  .fields.clearfix
+                    .input
+                      label(for='reg-email') 姓名：
+                      input#reg-email.email_f(name='email', type='text', required='', placeholder='嘉宾姓名', data-validation-type='text')
+                    .buttons
+                      button#submit-email.button.email_b(name='submit_email') 确认
+                  p.email-ok.invisible
+                    strong 等一场千年雨歇，侯一人如约而至！
+            //footer.p-footer.p-scrolldown
+              a(href='#about-us')
+                .arrow-d
+                  .before About
+                  .after Lorem
+                  .circle
+                    i.ion.ion-mouse
+          // End of register page
+          // Begin of about us page
+          #s-thanks.section.page-home.page.page-cent
+            // Content
+            section.content
+              header.header
+                .h-left
+                  h2
+                    | 诚邀
+                    strong 参加
+                .h-right
+                  h3
+                    | 罗密欧 &
+                    br
+                    |             朱丽叶
+                  h4.subhead
+                    a(href='#s-thanks') 婚礼答谢宴
+            // Scroll down button
+            //footer.p-footer.p-scrolldown
+              a(href='#register')
+                .arrow-d
+                  .before Scroll
+                  .after Down
+                  .circle
+                    i.ion.ion-mouse
+          //#s-about-us.section.page-about.page.page-cent
+            section.content
+              header.p-title
+                h3
+                  | 关于我们
+                  i.ion.ion-android-information
+                h4.subhead 适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。
+                h4.subhead
+                  | 来源：
+                  a(href='http://sc.chinaz.com/', target='_blank') 站长素材
+              //
+                article class="text">
+                <p>花径不曾缘客扫，蓬门今始为君开。　</p>
+                <p>盘飧市远无兼味，樽酒家贫只旧醅。 </p>
+                </article
+            footer.p-footer.p-scrolldown
+              a(href='#contact')
+                .arrow-d
+                  .before Contact
+                  .after Message
+                  .circle
+                    i.ion.ion-mouse
+          // End of about us page
+          // Begin of Contact page
+          #s-contact.section.page-contact.page.page-cent.bg-color(data-bgcolor='rgba(95, 25, 208, 0.88)s')
+            // Begin of contact information
+            #s-information.slide(data-anchor='information')
+              section.content
+                header.p-title
+                  h3
+                    | 地址
+                    i.ion.ion-location
+                  ul.buttons
+                    li.show-for-medium-up
+                      a(title='About', href='#about-us')
+                        i.ion.ion-android-information
+                    //
+                      <li>
+                      <a title="Contact" href="#contact/information"><i class="ion ion-location"></i></a>
+                      </li>
+                    li
+                      a(title='Message', href='#contact/message')
+                        i.ion.ion-email
+                // Begin Of Page SubSction
+                .contact
+                  .row
+                    .medium-6.columns.left
+                      ul
+                        li
+                          h4 宴会地点：
+                          p 拉斐皇廷酒店
+                        li
+                          h4 地址：
+                          p 南岸四公里公交车站旁
+                        li
+                          h4 酒店电话
+                          p  010-123456789
+                    .medium-6.columns.social-links.right
+                      ul
+                        // legal notice
+                        li.show-for-medium-up
+                          h4 查看地图
+                          p
+                            a(href='http://map.baidu.com/?newmap=1&s=inf%26uid%3Da61500c52fa38761f72310b0%26wd%3D%E5%BA%B7%E5%9F%8E%E5%9B%BD%E9%99%85%26all%3D1%26c%3D86&from=alamap&tpl=map_singlepoint', target='_blank') 点击查看在线地图
+                        //
+                          li  class="show-for-medium-up">
+                          <h4>Find us on</h4>
+                          <!-- Begin of Social links
+                        //
+                          div class="socialnet">
+                          <a href="#"><i class="ion ion-social-facebook"></i></a>
+                          <a href="#"><i class="ion ion-social-instagram"></i></a>
+                          <a href="#"><i class="ion ion-social-twitter"></i></a>
+                          <a href="#"><i class="ion ion-social-pinterest"></i></a>
+                          <a href="#"><i class="ion ion-social-tumblr"></i></a>
+                          </div>
+                          <!-- End of Social links
+                        li
+                          // p><img src="img/logo_large.png" alt="Logo" class="logo"></p
+                          p.small
+                            strong 期待您的到场！
+                // End of page SubSection
+            // end of contact information
+            // begin of contact message
+            #s-message.slide(data-anchor='message')
+              section.content
+                header.p-title
+                  h3
+                    | 宾客寄语：
+                    i.ion.ion-email
+                  ul.buttons
+                    li.show-for-medium-up
+                      a(title='About', href='#about-us')
+                        i.ion.ion-android-information
+                    li
+                      a(title='Contact', href='#contact/information')
+                        i.ion.ion-location
+                    //
+                      <li>
+                      <a title="Message" href="#contact/message"><i class="ion ion-email"></i></a>
+                      </li>
+                // Begin Of Page SubSction
+                .page-block.c-right.v-zoomIn
+                  .wrapper
+                    div
+                      form.message.form.send_message_form(method='get', action='ajaxserver/serverfile.php')
+                        .fields.clearfix
+                          .input
+                            label(for='mes-name') 姓名
+                            input#mes-name(name='name', type='text', placeholder='您的名字', required='')
+                          .buttons
+                            button#submit-message.button.email_b(name='submit_message') 发送
+                        .fields.clearfix
+                          .input
+                            label(for='mes-email') 邮箱：
+                            input#mes-email(type='email', placeholder='邮箱地址', name='email', required='')
+                        .fields.clearfix.no-border
+                          label(for='mes-text') 留言：
+                          textarea#mes-text(placeholder='您写下的祝福将被送出', name='message', required='')
+                          div
+                            p.message-ok.invisible 您的祝福已经送出，谢谢！.
+                // End Of Page SubSction
+            // End of contact message
+          // End of Contact page
+        script(src='/assets/libs/invitation/js/jquery.min.js')
+        // All vendor scripts
+        script(src='/assets/libs/invitation/js/vendor/all.js')
+        // Downcount JS
+        script(src='/assets/libs/invitation/js/jquery.downCount.js')
+        // Form script
+        script(src='/assets/libs/invitation/js/form_script.js')
+        // Javascript main files
+        script(src='/assets/libs/invitation/js/main.js')
+        script(type='text/javascript', src='/assets/libs/invitation/js/jquery.jplayer.min.js')
+        script(type='text/javascript').
+          $(document).ready(function () {
+            $("#jquery_jplayer_1").jPlayer({
+              ready: function () {
+                $(this).jPlayer("setMedia", {
+                  mp3: "/assets/music/music.mp3",
+                }).jPlayer("play");
+              },
+              ended: function () { // The $.jPlayer.event.ended event
+                $(this).jPlayer("play"); // Repeat the media
+              },
+              swfPath: "/js",
+              supplied: "mp3"
+            });
+          });
+        #jquery_jplayer_1
+        #jp_container_1
+        a.jp - play(href = '#')
+        li.ion - music - note(data - pack = 'default', data - tags = 'songs')
+        a.jp - pause(href = '#')
+        li.ion - headphone(data - pack = 'default', data - tags = 'music, earbuds, beats')
+      include pages/template/footer
+
+
